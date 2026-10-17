@@ -19,6 +19,9 @@
 
 ❤️Дякую за підтримку каналу
 
+npx vite --host
+
+
 npm install
 npm i -D esbuild qrcode-terminal
 npm run dev
@@ -45,17 +48,23 @@ git config --global user.email "ваша_почта@example.com"
 
 Добавление всех файлов в индекс:
 git add .
+
 Создание первого коммита:
 git commit -m "Initial commit"
+
 Переименование основной ветки в main:
 git branch -M main
+
 Привязка удалённого репозитория:
 git remote add origin https://github.com/ВАШ_ЛОГИН/ИМЯ_РЕПОЗИТОРИЯ.git    (пример https://github.com/IhorSafronov/relay-pet.git)
+
 (замените адрес на ссылку, скопированную на Шаге 1) Первая отправка проекта на GitHub:
 git push -u origin main
+
 (если выскочит окно браузера, подтвердите авторизацию, нажав «Sign in with your browser»)   
 
 Как работать дальше в процессе разработки После того как проект один раз привязан, для сохранения любых последующих правок и отправки их на GitHub используются всего три команды:
+
 git add . — подготовить все изменения к коммиту.
 git commit -m "Краткое описание того, что сделали" — зафиксировать изменения.
 git push — отправить изменения в репозиторий на GitHub.

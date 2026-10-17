@@ -1,0 +1,16 @@
+.title {
+	@include adaptiveValue('font-size', 46, 23);
+	line-height: 0.9;
+	text-transform: uppercase;
+	// .title--green
+	&--green {
+		color: $greenColor;
+	}
+	// .title--yellow
+	&--yellow {
+		color: $yellowColor;
+	}
+	// .title__container
+	&__container {
+	}
+}

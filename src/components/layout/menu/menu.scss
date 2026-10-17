@@ -1,4 +1,12 @@
 .menu {
+	padding-inline: 15px;
+	background-color: $mainColor;
+	color: $darkColor;
+	line-height: 1.3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
 	// .menu__icon
 	&__icon {
 	}
@@ -11,10 +19,11 @@
 			left: -100%;
 			top: 0;
 			overflow: auto;
-			padding: 50px 15px 30px 15px;
+			padding: 100px 15px 30px 15px;
 			transition: left 0.3s;
+			background-color: #00482258;
 			&::before {
-				content: "";
+				content: '';
 				position: fixed;
 				width: 100%;
 				height: 70px;
@@ -33,7 +42,15 @@
 	}
 	// .menu__list
 	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
 		@media (max-width: toEm($mobile)) {
+			flex-direction: column;
+			align-items: flex-end;
+			font-size: 24px;
+			text-align: end;
 		}
 	}
 	// .menu__item
@@ -41,6 +58,28 @@
 	}
 	// .menu__link
 	&__link {
+		position: relative;
+		transition: color 0.3s;
+		&::after {
+			content: '';
+			width: 0;
+			height: 0.5px;
+			background-color: $yellowColor;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transition: all 0.5s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $greenColor;
+				&::after {
+					width: 100%;
+					left: 0;
+					background-color: $greenColor;
+				}
+			}
+		}
 		@media (max-width: toEm($mobile)) {
 		}
 	}
@@ -61,13 +100,13 @@
 		span,
 		&::before,
 		&::after {
-			content: "";
+			content: '';
 			transition: all 0.3s ease 0s;
 			right: 0;
 			position: absolute;
 			width: 100%;
 			height: 2px;
-			background-color: #000;
+			background-color: $greenColor;
 		}
 		&::before {
 			top: 0;

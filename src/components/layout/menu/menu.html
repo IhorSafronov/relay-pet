@@ -1,31 +1,25 @@
 <div class="header__menu menu">
-	<button type="button" data-fls-menu class="menu__icon icon-menu"><span></span></button>
+	<a href="" class="menu__logo">
+		<img src="@img/logo.svg" alt="" />
+	</a>
 	<nav class="menu__body">
 		<ul class="menu__list">
-			<each loop='item in [
-					{"href": "#","ancor": "Home"},
-					{"href": "#","ancor": "About"},
-					{"href": "#","ancor": "Blog"},
-					{"href": "#","ancor": "Contacts"}
-				]'>
-				<if condition="'[[active]]' === '[[item.ancor]]'">
-					<li class="menu__item">
-						<a href="[[item.href]]" class="menu__link menu__link--active">[[item.ancor]]</a>
-					</li>
-				</if>
-				<else>
-					<li class="menu__item">
-						<a href="[[item.href]]" class="menu__link">[[item.ancor]]</a>
-					</li>
-				</else>
-			</each>
+			<li class="menu__item">
+				<a href="#" class="menu__link">What is Relay</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link">Accountants & Bookkeepers</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link">Pricing</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link">Resources</a>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link">Customer Stories</a>
+			</li>
 		</ul>
 	</nav>
+	<button type="button" data-fls-menu class="menu__icon icon-menu"><span></span></button>
 </div>
-
-<!-- 
-<fetch url="@components/layout/menu/menu.json">
-	<each loop='item in response'>
-	</each>
-</fetch>
--->
