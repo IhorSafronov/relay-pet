@@ -8,7 +8,8 @@
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+// import { Navigation } from 'swiper/modules';
+import { Navigation, Scrollbar } from 'swiper/modules';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -28,15 +29,14 @@ function initSliders() {
 	// Перевіряємо, чи є слайдер на сторінці
 	if (document.querySelector('.swiper')) { // <- Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', { // <- Вказуємо склас потрібного слайдера
+		new Swiper('.community__slider', { // <- Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation],
+			modules: [Navigation, Scrollbar],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 0,
-			//autoHeight: true,
+			spaceBetween: 30,
 			speed: 800,
 
 			//touchRatio: 0,
@@ -63,12 +63,12 @@ function initSliders() {
 			*/
 
 			// Скроллбар
-			/*
+
 			scrollbar: {
-				el: '.swiper-scrollbar',
+				el: '.community__scrollbar',
 				draggable: true,
 			},
-			*/
+
 
 			// Кнопки "вліво/вправо"
 			navigation: {

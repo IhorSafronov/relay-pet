@@ -2,6 +2,10 @@
 	@include adaptiveValue('font-size', 46, 23);
 	line-height: 0.9;
 	text-transform: uppercase;
+	text-align: center;
+	&:not(:last-child) {
+		margin-bottom: 50px;
+	}
 	// .title--green
 	&--green {
 		color: $greenColor;
