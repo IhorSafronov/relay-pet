@@ -21,7 +21,7 @@
 			overflow: auto;
 			padding: 100px 15px 30px 15px;
 			transition: left 0.3s;
-			background-color: #00482258;
+			background-color: #acc604c3;
 			&::before {
 				content: '';
 				position: fixed;
@@ -51,6 +51,7 @@
 			align-items: flex-end;
 			font-size: 24px;
 			text-align: end;
+			font-size: 30px;
 		}
 	}
 	// .menu__item

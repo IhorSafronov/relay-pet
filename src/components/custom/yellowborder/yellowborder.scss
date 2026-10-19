@@ -5,7 +5,7 @@
 	// .yellowborder__text
 	&__text {
 		color: $yellowColor;
-		@include adaptiveValue('font-size', 30, 15);
+		@include adaptiveValue('font-size', 30, 24);
 		line-height: 0.7;
 		display: inline-flex;
 		border: 2px solid $yellowColor;
